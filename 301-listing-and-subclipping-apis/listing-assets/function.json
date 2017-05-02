@@ -4,7 +4,6 @@
       "type": "httpTrigger",
       "direction": "in",
       "name": "req",
-      "authLevel": "anonymous",
       "route": "assets",
       "methods": [
         "get"
