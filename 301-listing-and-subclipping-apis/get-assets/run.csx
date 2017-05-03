@@ -1,8 +1,5 @@
 #load "../shared/asset.csx"
 
-#r "Microsoft.WindowsAzure.Storage"
-#r "Newtonsoft.Json"
-
 using System;
 using System.Collections.Generic;
 using System.Globalization;

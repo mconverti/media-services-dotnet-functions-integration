@@ -1,13 +1,9 @@
 #load "../shared/asset.csx"
 
-#r "Microsoft.WindowsAzure.Storage"
-#r "Newtonsoft.Json"
-
 using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
-using System.Linq.Expressions;
 using System.Net;
 using Microsoft.WindowsAzure.MediaServices.Client;
 
