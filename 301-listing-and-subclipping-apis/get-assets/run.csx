@@ -13,16 +13,14 @@ using Microsoft.WindowsAzure.MediaServices.Client;
 
 public static HttpResponseMessage Run(HttpRequestMessage req, TraceWriter log)
 {
-    var expirationThreshold = DateTime.Now.AddMinutes(5);
-    var mediaServicesAccountName = Environment.GetEnvironmentVariable("AMSAccount");
-    var mediaServicesAccountKey = Environment.GetEnvironmentVariable("AMSKey");
-
-    log.Info($"Listing assets for '{mediaServicesAccountName}' account.");
-
     var valuePairs = req.GetQueryNameValuePairs();
     var skip = GetQueryStringIntValue(valuePairs, "skip", 0);
     var take = GetQueryStringIntValue(valuePairs, "take", 10);
-    log.Info($"Using paging parameters. skip: '{skip}' - take: '{take}'");
+    var mediaServicesAccountName = Environment.GetEnvironmentVariable("AMSAccount");
+    var mediaServicesAccountKey = Environment.GetEnvironmentVariable("AMSKey");
+    var expirationThreshold = DateTime.Now.AddMinutes(5);
+
+    log.Info($"Getting assets from '{mediaServicesAccountName}' account with paging parameters. skip: '{skip}' - take: '{take}'");
 
     var context = new CloudMediaContext(new MediaServicesCredentials(mediaServicesAccountName, mediaServicesAccountKey));
     var mediaAssets = context.Assets.OrderByDescending(a => a.Created).Skip(skip).Take(take).ToArray();
