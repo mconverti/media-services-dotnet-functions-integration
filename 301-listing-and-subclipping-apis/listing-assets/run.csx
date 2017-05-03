@@ -10,8 +10,6 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Net;
 using Microsoft.WindowsAzure.MediaServices.Client;
-using Microsoft.WindowsAzure.Storage;
-using Newtonsoft.Json;
 
 public static HttpResponseMessage Run(HttpRequestMessage req, TraceWriter log)
 {
@@ -20,10 +18,10 @@ public static HttpResponseMessage Run(HttpRequestMessage req, TraceWriter log)
     var mediaServicesAccountKey = Environment.GetEnvironmentVariable("AMSKey");
 
     log.Info($"Listing assets for '{mediaServicesAccountName}' account.");
-    
+
     var valuePairs = req.GetQueryNameValuePairs();
     var skip = GetQueryStringIntValue(valuePairs, "skip", 0);
-    var take = GetQueryStringIntValue(valuePairs, "take", 10);;
+    var take = GetQueryStringIntValue(valuePairs, "take", 10);
     log.Info($"Using paging parameters. skip: '{skip}' - take: '{take}'");
 
     var context = new CloudMediaContext(new MediaServicesCredentials(mediaServicesAccountName, mediaServicesAccountKey));
@@ -42,10 +40,12 @@ public static HttpResponseMessage Run(HttpRequestMessage req, TraceWriter log)
                 return ToApiAsset(a, (mediaAssetFilesGroup != null) ? mediaAssetFilesGroup.AsEnumerable() : new IAssetFile[0], (mediaLocatorsGroup != null) ? mediaLocatorsGroup.AsEnumerable() : new ILocator[0], streamingEndpoint);
             })
         .ToArray();
+    log.Info($"Returning '{apiAssets.Length}' assets.");
+
     return req.CreateResponse(HttpStatusCode.OK, apiAssets);
 }
 
-public static int GetQueryStringIntValue(IEnumerable<KeyValuePair<string, string>> keyValuePairs, string key, int defaultValue)
+public static int GetQueryStringIntValue(IEnumerable<KeyValuePair<string, string>> keyValuePairs, string key, int defaultValue)
 {
     var queryStringValue = defaultValue;
 

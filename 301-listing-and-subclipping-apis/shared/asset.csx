@@ -35,7 +35,7 @@ public class Asset
     public string Type { get; set; }
 
     public string BaseStreamingUrl { get; set; }
-    
+
     public IEnumerable<File> Files { get; set; }
 }
 
@@ -50,11 +50,10 @@ public class File
 
 public static Asset ToApiAsset(IAsset mediaAsset, IEnumerable<IAssetFile> mediaAssetFiles, IEnumerable<ILocator> mediaLocators, IStreamingEndpoint streamingEndpoint)
 {
-    var apiAsset = new Asset { Id = mediaAsset.Id, Name = mediaAsset.Name };
+    var apiAsset = new Asset { Id = mediaAsset.Id, Name = mediaAsset.Name, Type = GetAssetType(mediaAssetFiles), Files = new File[0] };
     ILocator streamingLocator = null;
     ILocator sasLocator = null;
     IAssetFile manifestAssetFile = mediaAssetFiles.FirstOrDefault(af => af.Name.EndsWith(IsmFileExtension, StringComparison.OrdinalIgnoreCase));
-
     if (streamingEndpoint != null)
     {
         streamingLocator = mediaLocators.FirstOrDefault(l => l.Type == LocatorType.OnDemandOrigin);
@@ -70,5 +69,67 @@ public static Asset ToApiAsset(IAsset mediaAsset, IEnumerable<IAssetFile> mediaA
         apiAsset.BaseStreamingUrl = $"//{streamingEndpoint.HostName}/{streamingLocator.ContentAccessComponent}/{manifestAssetFile.Name}/manifest";
     }
 
+    apiAsset.Files = mediaAssetFiles.Select(af => ToApiFile(af, streamingLocator, sasLocator, streamingEndpoint)).ToArray();
+
     return apiAsset;
+}
+
+public static File ToApiFile(IAssetFile mediaAssetFile, ILocator streamingLocator, ILocator sasLocator, IStreamingEndpoint streamingEndpoint)
+{
+    var apiFile = new File { Name = mediaAssetFile.Name, Size = mediaAssetFile.ContentFileSize };
+
+    if (streamingLocator != null && streamingLocator != null)
+    {
+        apiFile.DownloadUrl = $"//{streamingEndpoint.HostName}/{streamingLocator.ContentAccessComponent}/{mediaAssetFile.Name}";
+    }
+    else if (sasLocator != null)
+    {
+        apiFile.DownloadUrl = $"{sasLocator.BaseUri}/{mediaAssetFile.Name}{sasLocator.ContentAccessComponent}";
+    }
+
+    return apiFile;
+}
+
+public static string GetAssetType(IEnumerable<IAssetFile> mediaAssetFiles)
+{
+    var assetType = "Unknown";
+    var mp4FileCount = mediaAssetFiles.Count(af => af.Name.EndsWith(Mp4FileExtension, StringComparison.OrdinalIgnoreCase));
+    if (mediaAssetFiles.Any(af => af.Name.EndsWith(IsmFileExtension, StringComparison.OrdinalIgnoreCase)))
+    {
+        var hasIsmvOrIsma = mediaAssetFiles.Any(af => af.Name.EndsWith(IsmvFileExtension, StringComparison.OrdinalIgnoreCase) || af.Name.EndsWith(IsmaFileExtension, StringComparison.OrdinalIgnoreCase));
+        if (mediaAssetFiles.Any(af => af.Name.EndsWith(IsmcFileExtension, StringComparison.OrdinalIgnoreCase)) && hasIsmvOrIsma)
+        {
+            assetType = "Smooth Streaming";
+        }
+        else if (mp4FileCount > 0)
+        {
+            assetType = (mp4FileCount == 1) ? "Single MP4" : "Multi-Bitrate MP4";
+        }
+        else if (mediaAssetFiles.Any(af => af.Name.EndsWith(M3u8FileExtension, StringComparison.OrdinalIgnoreCase)))
+        {
+            assetType = "HLS Streaming";
+        }
+        else if (!hasIsmvOrIsma)
+        {
+            assetType = "Live Archive";
+        }
+    }
+    else if (mediaAssetFiles.Any(af => af.Name.EndsWith(JpgFileExtension, StringComparison.OrdinalIgnoreCase) || af.Name.EndsWith(PngFileExtension, StringComparison.OrdinalIgnoreCase) || af.Name.EndsWith(BmpFileExtension, StringComparison.OrdinalIgnoreCase)))
+    {
+        assetType = "Thumbnail";
+    }
+    else if (mp4FileCount == 1)
+    {
+        assetType = "Single MP4";
+    }
+    else if (mediaAssetFiles.Any(af => af.Name.EndsWith(Mp3FileExtension, StringComparison.OrdinalIgnoreCase) || af.Name.EndsWith(WabFileExtension, StringComparison.OrdinalIgnoreCase) || af.Name.EndsWith(WmaFileExtension, StringComparison.OrdinalIgnoreCase) || af.Name.EndsWith(M4aFileExtension, StringComparison.OrdinalIgnoreCase) || af.Name.EndsWith(PcmFileExtension, StringComparison.OrdinalIgnoreCase) || af.Name.EndsWith(F4aFileExtension, StringComparison.OrdinalIgnoreCase) || af.Name.EndsWith(MkaFileExtension, StringComparison.OrdinalIgnoreCase) || af.Name.EndsWith(OggFileExtension, StringComparison.OrdinalIgnoreCase)))
+    {
+        assetType = "Audio";
+    }
+    else if ((mediaAssetFiles.Count() == 1) && (mediaAssetFiles.Any(af => af.Name.EndsWith(KayakFileExtension, StringComparison.OrdinalIgnoreCase) || af.Name.EndsWith(GraphFileExtension, StringComparison.OrdinalIgnoreCase) || af.Name.EndsWith(XenioFileExtension, StringComparison.OrdinalIgnoreCase) || af.Name.EndsWith(WorkflowFileExtension, StringComparison.OrdinalIgnoreCase) || af.Name.EndsWith(ZeniumFileExtension, StringComparison.OrdinalIgnoreCase) || af.Name.EndsWith(BlueprintFileExtension, StringComparison.OrdinalIgnoreCase))))
+    {
+        assetType = "Encoder Configuration";
+    }
+
+    return assetType;
 }
