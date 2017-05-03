@@ -3,6 +3,7 @@
     {
       "type": "httpTrigger",
       "direction": "in",
+      "authLevel": "anonymous",
       "name": "req",
       "route": "assets",
       "methods": [
