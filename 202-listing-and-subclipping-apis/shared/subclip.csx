@@ -7,4 +7,6 @@ public class Subclip
     public double Start { get; set; }
 
     public double End { get; set; }
+
+    public string EncodingProfile { get; set; }
 }

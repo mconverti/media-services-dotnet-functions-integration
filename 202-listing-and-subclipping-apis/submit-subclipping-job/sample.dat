@@ -1,6 +1,6 @@
 {
-    "SourceAssetId": "nb:cid:UUID:dabfe696-02fa-45ac-b708-8db482e4db9b"
+    "SourceAssetId": "nb:cid:UUID:ba560edd-d0dd-49b6-baf5-9c4d5932b9a3",
     "Name": "Sample Subclip",
-    "Start": 5.1
-    "End": 20.5
+    "Start": 4.15,
+    "End": 15.55
 }

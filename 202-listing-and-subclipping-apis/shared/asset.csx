@@ -48,22 +48,25 @@ public class File
     public string DownloadUrl { get; set; }
 }
 
-public static Asset ToApiAsset(IAsset mediaAsset, IEnumerable<IAssetFile> mediaAssetFiles, IEnumerable<ILocator> mediaLocators, IStreamingEndpoint streamingEndpoint)
+public static Asset ToApiAsset(IAsset mediaAsset, IEnumerable<IAssetFile> mediaAssetFiles, IEnumerable<ILocator> mediaLocators, IEnumerable<IStreamingEndpoint> streamingEndpoints)
 {
     var apiAsset = new Asset { Id = mediaAsset.Id, Name = mediaAsset.Name, Type = GetAssetType(mediaAssetFiles), Files = new File[0] };
-    ILocator streamingLocator = null;
-    ILocator sasLocator = null;
-    IAssetFile manifestAssetFile = mediaAssetFiles.FirstOrDefault(af => af.Name.EndsWith(IsmFileExtension, StringComparison.OrdinalIgnoreCase));
+    var expirationThreshold = DateTime.UtcNow.AddMinutes(5);
+    var streamingEndpoint = streamingEndpoints.Where(e => e.StreamingEndpointVersion == "2.0" || e.ScaleUnits > 0).FirstOrDefault(e => e.State == StreamingEndpointState.Running);
+    var streamingLocator = default(ILocator);
+    mediaLocators = mediaLocators.Where(l => l.ExpirationDateTime > expirationThreshold).OrderByDescending(a => a.ExpirationDateTime).ToArray();
     if (streamingEndpoint != null)
     {
         streamingLocator = mediaLocators.FirstOrDefault(l => l.Type == LocatorType.OnDemandOrigin);
     }
 
+    var sasLocator = default(ILocator);
     if (streamingLocator == null)
     {
         sasLocator = mediaLocators.FirstOrDefault(l => l.Type == Locator​Type.Sas);
     }
 
+    var manifestAssetFile = mediaAssetFiles.FirstOrDefault(af => af.Name.EndsWith(IsmFileExtension, StringComparison.OrdinalIgnoreCase));
     if (manifestAssetFile != null && streamingEndpoint != null && streamingLocator != null)
     {
         apiAsset.BaseStreamingUrl = $"//{streamingEndpoint.HostName}/{streamingLocator.ContentAccessComponent}/{manifestAssetFile.Name}/manifest";

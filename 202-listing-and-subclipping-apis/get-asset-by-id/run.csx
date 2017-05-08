@@ -9,7 +9,6 @@ using Microsoft.WindowsAzure.MediaServices.Client;
 
 public static HttpResponseMessage Run(HttpRequestMessage req, string assetId, TraceWriter log)
 {
-    var expirationThreshold = DateTime.Now.AddMinutes(5);
     var mediaServicesAccountName = Environment.GetEnvironmentVariable("AMSAccount");
     var mediaServicesAccountKey = Environment.GetEnvironmentVariable("AMSKey");
 
@@ -26,11 +25,11 @@ public static HttpResponseMessage Run(HttpRequestMessage req, string assetId, Tr
 
     var mediaAssetFiles = mediaAsset.AssetFiles.ToArray();
     var mediaLocators = mediaAsset.Locators.ToArray();
-    var streamingEndpoint = context.StreamingEndpoints.Where(e => e.StreamingEndpointVersion == "2.0" || e.ScaleUnits > 0).ToArray().FirstOrDefault(e => e.State == StreamingEndpointState.Running);
+    var streamingEndpoints = context.StreamingEndpoints.ToArray();
 
-    var apiAsset = ToApiAsset(mediaAsset, mediaAssetFiles, mediaLocators, streamingEndpoint);
+    var apiAsset = ToApiAsset(mediaAsset, mediaAssetFiles, mediaLocators, streamingEndpoints);
 
-    log.Info($"Returning '{assetId}' asset.");
+    log.Info($"Returning '{assetId}' asset from '{mediaServicesAccountName}' account.");
 
     return req.CreateResponse(HttpStatusCode.OK, apiAsset);
 }

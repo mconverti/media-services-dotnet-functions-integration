@@ -1,0 +1,20 @@
+{
+  "bindings": [
+    {
+      "type": "httpTrigger",
+      "direction": "in",
+      "authLevel": "anonymous",
+      "name": "req",
+      "route": "subclips/jobs/{jobId}",
+      "methods": [
+        "get"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    }
+  ],
+  "disabled": false
+}
