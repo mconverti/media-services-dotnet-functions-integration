@@ -1,0 +1,15 @@
+{
+   "MessageVersion":"1.0",
+   "EventType":"JobStateChange",
+   "ETag":"9854acf5de016c07c7dbe44e11c384aee246d721c4ff41830edf16c67077accc",
+   "TimeStamp":"2017-05-08T01:50:55",
+   "Properties":{
+      "JobId":"nb:jid:UUID:c6004742-3b34-4022-a31b-b638d4b7610c",
+      "JobName":"Subclipping job for \u0027nb:cid:UUID:ba560edd-d0dd-49b6-baf5-9c4d5932b9a3\u0027",
+      "NewState":"Finished",
+      "OldState":"Processing",
+      "AccountName":"mconvertitest001",
+      "AccountId":"a1ce2c2f-9d24-4c62-abc3-ba0bd4c99560",
+      "NotificationEndPointId":"nb:nepid:UUID:5233619b-056e-4d27-ae74-20dca9a6b913"
+   }
+}
