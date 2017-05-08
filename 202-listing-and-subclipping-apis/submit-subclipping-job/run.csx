@@ -52,7 +52,7 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
 
     var notificationEndpoint = context.NotificationEndPoints.Where(e => e.Name == SubclippingAzureFunctionNotificationEndpointName).FirstOrDefault();
     if (notificationEndpoint == null)
-    {            
+    {
         log.Info($"Creating notification endpoint '{SubclippingAzureFunctionNotificationEndpointName}' in '{mediaServicesAccountName}' account for '{SubclippingJobsQueueName}' queue.");
         notificationEndpoint = await context.NotificationEndPoints.CreateAsync(SubclippingAzureFunctionNotificationEndpointName, NotificationEndPointType.AzureQueue, SubclippingJobsQueueName).ConfigureAwait(false);
     }
@@ -61,11 +61,11 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
     var subclippingPreset = BuildSubclippingPreset(subclip.Start, subclip.End - subclip.Start, subclip.EncodingProfile);
     var subclippingJob = context.Jobs.Create($"Subclipping job for '{mediaAsset.Id}'");
     var subclippingTask = subclippingJob.Tasks.AddNew($"Subclipping task for '{mediaAsset.Id}'", mediaProcessor, subclippingPreset, TaskOptions.None);
-        
+
     subclippingTask.InputAssets.Add(mediaAsset);
     subclippingTask.OutputAssets.AddNew(subclip.Name, AssetCreationOptions.None);
     subclippingJob.JobNotificationSubscriptions.AddNew(NotificationJobState.FinalStatesOnly, notificationEndpoint);
-    
+
     await subclippingJob.SubmitAsync().ConfigureAwait(false);
     log.Info($"Subclipping job submitted '{subclippingJob.Id}' in '{mediaServicesAccountName}' account.");
 
@@ -74,19 +74,25 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
 
 public static string BuildSubclippingPreset(double start, double duration, string encodingProfile)
 {
-    var presetPath = Path.Combine(@"shared/presets", $"{encodingProfile}.json");
-    dynamic preset = JObject.Parse(File.ReadAllText(presetPath));
-    
-    // TODO
+    var presetBasePath = @"shared/presets";
+    var homePath = Environment.GetEnvironmentVariable("HOME", EnvironmentVariableTarget.Process);
+    if (!string.IsNullOrWhiteSpace(homePath))
+    {
+        presetBasePath = Path.Combine(homePath, @"site/wwwroot/shared/presets");
+    }
+
+    var presetPath = Path.Combine(presetBasePath, $"{encodingProfile}.json");
+    var preset = JObject.Parse(File.ReadAllText(presetPath));
     var subclippingInfo = new JObject();
     subclippingInfo.Add("StartTime", new JValue(FormatTime(start)));
     subclippingInfo.Add("Duration", new JValue(FormatTime(duration)));
     preset.Add("Sources", new JArray(subclippingInfo));
-    
-    return JsonConvert.SerializeObject(preset);;
+
+    return JsonConvert.SerializeObject(preset); ;
 }
 
-public static string FormatTime(double timeInSeconds) {
+public static string FormatTime(double timeInSeconds)
+{
     var d = Math.Floor(timeInSeconds / 86400);
     timeInSeconds -= (d * 86400);
     var h = Math.Floor(timeInSeconds / 3600) % 24;
@@ -102,7 +108,8 @@ public static string FormatTime(double timeInSeconds) {
     returnVal = returnVal + (h < 10 ? $"0{h}:" : $"{h}:");
     returnVal = returnVal + (m < 10 ? $"0{m}:" : $"{m}:");
     returnVal = returnVal + (s < 10 ? $"0{s}" : $"{s}");
-    if (hs > 0) {
+    if (hs > 0)
+    {
         returnVal = returnVal + $".{hs}";
     }
 

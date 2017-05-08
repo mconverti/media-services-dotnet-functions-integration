@@ -10,7 +10,6 @@ public static void Run(string jobNotification, TraceWriter log)
 {
     log.Info($"Job notification received: '{jobNotification}'");
     dynamic notification = JsonConvert.DeserializeObject<dynamic>(jobNotification);
-    //dynamic notification = JObject.Parse(jobNotification);
     if (notification.Properties.NewState == "Finished")
     {
         var jobId = (string)notification.Properties.JobId;
