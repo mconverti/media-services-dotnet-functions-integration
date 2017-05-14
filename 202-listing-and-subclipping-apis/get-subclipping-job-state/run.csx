@@ -5,10 +5,17 @@ using System.Linq;
 using System.Net;
 using Microsoft.WindowsAzure.MediaServices.Client;
 
+public const string JobIdPrefix = "nb:jid:UUID:";
+
 public static HttpResponseMessage Run(HttpRequestMessage req, string jobId, TraceWriter log)
 {
     var mediaServicesAccountName = Environment.GetEnvironmentVariable("AMSAccount");
     var mediaServicesAccountKey = Environment.GetEnvironmentVariable("AMSKey");
+
+    if (!jobId.StartsWith(JobIdPrefix, StringComparison.OrdinalIgnoreCase))
+    {
+        jobId = $"{JobIdPrefix}{jobId}";
+    }
 
     log.Info($"Getting job '{jobId}' from '{mediaServicesAccountName}' account.");
 
