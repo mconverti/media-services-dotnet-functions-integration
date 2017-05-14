@@ -2,6 +2,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.WindowsAzure.MediaServices.Client;
 
+public const string AssetIdPrefix = "nb:cid:UUID:";
+
 public const string Mp3FileExtension = ".mp3";
 public const string WabFileExtension = ".wav";
 public const string WmaFileExtension = ".wma";

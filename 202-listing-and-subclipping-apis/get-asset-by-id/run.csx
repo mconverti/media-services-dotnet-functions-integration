@@ -12,6 +12,11 @@ public static HttpResponseMessage Run(HttpRequestMessage req, string assetId, Tr
     var mediaServicesAccountName = Environment.GetEnvironmentVariable("AMSAccount");
     var mediaServicesAccountKey = Environment.GetEnvironmentVariable("AMSKey");
 
+    if (!assetId.StartsWith(AssetIdPrefix, StringComparison.OrdinalIgnoreCase))
+    {
+        assetId = $"{AssetIdPrefix}{assetId}";
+    }
+
     log.Info($"Getting asset '{assetId}' from '{mediaServicesAccountName}' account.");
 
     var context = new CloudMediaContext(new MediaServicesCredentials(mediaServicesAccountName, mediaServicesAccountKey));
