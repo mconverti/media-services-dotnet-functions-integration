@@ -25,6 +25,9 @@ public static HttpResponseMessage Run(HttpRequestMessage req, TraceWriter log)
     var mediaLocatorsGroups = context.Locators.Where(CreateOrExpression<ILocator, string>("AssetId", mediaAssetIds)).ToArray().GroupBy(l => l.AssetId);
     var streamingEndpoints = context.StreamingEndpoints.ToArray();
 
+    log.Info($"Getting assets total count from '{mediaServicesAccountName}' account.");
+    var apiAssetsTotalCount = context.Assets.Count();
+
     var apiAssets = mediaAssets
         .Select(
             a =>
@@ -34,9 +37,13 @@ public static HttpResponseMessage Run(HttpRequestMessage req, TraceWriter log)
                 return ToApiAsset(a, (mediaAssetFilesGroup != null) ? mediaAssetFilesGroup.AsEnumerable() : new IAssetFile[0], (mediaLocatorsGroup != null) ? mediaLocatorsGroup.AsEnumerable() : new ILocator[0], streamingEndpoints);
             })
         .ToArray();
-    log.Info($"Returning '{apiAssets.Length}' assets from '{mediaServicesAccountName}' account.");
+    log.Info($"Returning '{apiAssets.Length}' assets out of '{apiAssetsTotalCount}' from '{mediaServicesAccountName}' account.");
 
-    return req.CreateResponse(HttpStatusCode.OK, apiAssets);
+    return req.CreateResponse(HttpStatusCode.OK, new {
+        Data = apiAssets,
+        Total = apiAssetsTotalCount,
+        Skip = skip
+    });
 }
 
 public static int GetQueryStringIntValue(IEnumerable<KeyValuePair<string, string>> keyValuePairs, string key, int defaultValue)
