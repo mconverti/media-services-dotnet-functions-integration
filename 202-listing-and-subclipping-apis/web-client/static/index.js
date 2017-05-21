@@ -138,8 +138,11 @@
             player.ready(function () {
                 player.src([{
                     src: asset.BaseStreamingUrl,
-                    type: 'application/dash+xml'
+                    type: "application/vnd.ms-sstr+xml"
                 }]);
+
+                // Make sure that rendered mode is selected
+                $(".amve-btn.amve-btn-text.amve-rendered-btn").click();
             });
         });
     });
