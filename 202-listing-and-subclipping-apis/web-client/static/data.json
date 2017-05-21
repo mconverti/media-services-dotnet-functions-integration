@@ -1,0 +1,849 @@
+{
+    "total": 1292,
+    "skip": 123,
+    "data": [
+    {
+        "Id": "nb:cid:UUID:5c4532bc-87d6-40a3-a067-dc451887116b",
+        "Name": "Paneo",
+        "Type": "Multi-Bitrate MP4",
+        "BaseStreamingUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/cd16cbe7-d09a-421d-bce1-abbb2cb83c68/big_buck_bunny_720p_stereo.ism/manifest",
+        "Files": [
+        {
+            "Name": "big_buck_bunny_720p_stereo.ismc",
+            "Size": 1956,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/cd16cbe7-d09a-421d-bce1-abbb2cb83c68/big_buck_bunny_720p_stereo.ismc"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo.ism",
+            "Size": 2564,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/cd16cbe7-d09a-421d-bce1-abbb2cb83c68/big_buck_bunny_720p_stereo.ism"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_1280x_320x180_400.mp4",
+            "Size": 1189243,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/cd16cbe7-d09a-421d-bce1-abbb2cb83c68/big_buck_bunny_720p_stereo_1280x_320x180_400.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_1280x_640x360_650.mp4",
+            "Size": 1450273,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/cd16cbe7-d09a-421d-bce1-abbb2cb83c68/big_buck_bunny_720p_stereo_1280x_640x360_650.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_1280x_640x360_1000.mp4",
+            "Size": 1803681,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/cd16cbe7-d09a-421d-bce1-abbb2cb83c68/big_buck_bunny_720p_stereo_1280x_640x360_1000.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_1280x_960x540_1500.mp4",
+            "Size": 2293216,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/cd16cbe7-d09a-421d-bce1-abbb2cb83c68/big_buck_bunny_720p_stereo_1280x_960x540_1500.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_1280x_960x540_2250.mp4",
+            "Size": 3031774,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/cd16cbe7-d09a-421d-bce1-abbb2cb83c68/big_buck_bunny_720p_stereo_1280x_960x540_2250.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_1280x_1280x720_3400.mp4",
+            "Size": 4126612,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/cd16cbe7-d09a-421d-bce1-abbb2cb83c68/big_buck_bunny_720p_stereo_1280x_1280x720_3400.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_manifest.xml",
+            "Size": 7890,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/cd16cbe7-d09a-421d-bce1-abbb2cb83c68/big_buck_bunny_720p_stereo_manifest.xml"
+        },
+        {
+            "Name": "8ed691db-920e-4f68-a9f1-d55200c20ba6_metadata.xml",
+            "Size": 1097,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/cd16cbe7-d09a-421d-bce1-abbb2cb83c68/8ed691db-920e-4f68-a9f1-d55200c20ba6_metadata.xml"
+        }
+        ]
+    },
+    {
+        "Id": "nb:cid:UUID:3c7d7610-43ae-4f8e-8b17-17e7b7229fee",
+        "Name": "asdasdasdasdasd",
+        "Type": "Multi-Bitrate MP4",
+        "BaseStreamingUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/c72d6c87-74c0-45c7-9f5b-1727bba86647/big_buck_bunny_720p_stereo.ism/manifest",
+        "Files": [
+        {
+            "Name": "big_buck_bunny_720p_stereo.ismc",
+            "Size": 1927,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/c72d6c87-74c0-45c7-9f5b-1727bba86647/big_buck_bunny_720p_stereo.ismc"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo.ism",
+            "Size": 2564,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/c72d6c87-74c0-45c7-9f5b-1727bba86647/big_buck_bunny_720p_stereo.ism"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_1280x_320x180_400.mp4",
+            "Size": 603411,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/c72d6c87-74c0-45c7-9f5b-1727bba86647/big_buck_bunny_720p_stereo_1280x_320x180_400.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_1280x_640x360_650.mp4",
+            "Size": 726878,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/c72d6c87-74c0-45c7-9f5b-1727bba86647/big_buck_bunny_720p_stereo_1280x_640x360_650.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_1280x_640x360_1000.mp4",
+            "Size": 896353,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/c72d6c87-74c0-45c7-9f5b-1727bba86647/big_buck_bunny_720p_stereo_1280x_640x360_1000.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_1280x_960x540_1500.mp4",
+            "Size": 1150490,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/c72d6c87-74c0-45c7-9f5b-1727bba86647/big_buck_bunny_720p_stereo_1280x_960x540_1500.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_1280x_960x540_2250.mp4",
+            "Size": 1522759,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/c72d6c87-74c0-45c7-9f5b-1727bba86647/big_buck_bunny_720p_stereo_1280x_960x540_2250.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_1280x_1280x720_3400.mp4",
+            "Size": 2094618,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/c72d6c87-74c0-45c7-9f5b-1727bba86647/big_buck_bunny_720p_stereo_1280x_1280x720_3400.mp4"
+        },
+        {
+            "Name": "4c75509d-9cbf-4103-99e8-25f948870e27_metadata.xml",
+            "Size": 2157,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/c72d6c87-74c0-45c7-9f5b-1727bba86647/4c75509d-9cbf-4103-99e8-25f948870e27_metadata.xml"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_manifest.xml",
+            "Size": 7887,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/c72d6c87-74c0-45c7-9f5b-1727bba86647/big_buck_bunny_720p_stereo_manifest.xml"
+        }
+        ]
+    },
+    {
+        "Id": "nb:cid:UUID:d550df4d-000e-4f43-b35b-e5fa065e7144",
+        "Name": "asasdasd",
+        "Type": "Multi-Bitrate MP4",
+        "BaseStreamingUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/aa160107-ed01-45c0-96b7-83b02d1af189/big_buck_bunny_720p_stereo.ism/manifest",
+        "Files": [
+        {
+            "Name": "big_buck_bunny_720p_stereo.ismc",
+            "Size": 1908,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/aa160107-ed01-45c0-96b7-83b02d1af189/big_buck_bunny_720p_stereo.ismc"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo.ism",
+            "Size": 2562,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/aa160107-ed01-45c0-96b7-83b02d1af189/big_buck_bunny_720p_stereo.ism"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_1280x_320x180_400.mp4",
+            "Size": 810003,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/aa160107-ed01-45c0-96b7-83b02d1af189/big_buck_bunny_720p_stereo_1280x_320x180_400.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_1280x_640x360_650.mp4",
+            "Size": 830413,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/aa160107-ed01-45c0-96b7-83b02d1af189/big_buck_bunny_720p_stereo_1280x_640x360_650.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_1280x_640x360_1000.mp4",
+            "Size": 875965,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/aa160107-ed01-45c0-96b7-83b02d1af189/big_buck_bunny_720p_stereo_1280x_640x360_1000.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_1280x_960x540_1500.mp4",
+            "Size": 949969,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/aa160107-ed01-45c0-96b7-83b02d1af189/big_buck_bunny_720p_stereo_1280x_960x540_1500.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_1280x_960x540_2250.mp4",
+            "Size": 1062773,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/aa160107-ed01-45c0-96b7-83b02d1af189/big_buck_bunny_720p_stereo_1280x_960x540_2250.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_1280x_1280x720_3400.mp4",
+            "Size": 1248511,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/aa160107-ed01-45c0-96b7-83b02d1af189/big_buck_bunny_720p_stereo_1280x_1280x720_3400.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_manifest.xml",
+            "Size": 30013,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/aa160107-ed01-45c0-96b7-83b02d1af189/big_buck_bunny_720p_stereo_manifest.xml"
+        },
+        {
+            "Name": "7d3530fd-e20f-42d9-925d-1e90266754ae_metadata.xml",
+            "Size": 5063,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/aa160107-ed01-45c0-96b7-83b02d1af189/7d3530fd-e20f-42d9-925d-1e90266754ae_metadata.xml"
+        }
+        ]
+    },
+    {
+        "Id": "nb:cid:UUID:7d3530fd-e20f-42d9-925d-1e90266754ae",
+        "Name": "Example 4",
+        "Type": "Multi-Bitrate MP4",
+        "BaseStreamingUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/114cc51d-b45c-46d0-bd33-7752d53768fa/big_buck_bunny_720p_stereo.ism/manifest",
+        "Files": [
+        {
+            "Name": "big_buck_bunny_720p_stereo.ismc",
+            "Size": 1927,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/114cc51d-b45c-46d0-bd33-7752d53768fa/big_buck_bunny_720p_stereo.ismc"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo.ism",
+            "Size": 2564,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/114cc51d-b45c-46d0-bd33-7752d53768fa/big_buck_bunny_720p_stereo.ism"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_1280x_320x180_400.mp4",
+            "Size": 608915,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/114cc51d-b45c-46d0-bd33-7752d53768fa/big_buck_bunny_720p_stereo_1280x_320x180_400.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_1280x_640x360_650.mp4",
+            "Size": 734233,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/114cc51d-b45c-46d0-bd33-7752d53768fa/big_buck_bunny_720p_stereo_1280x_640x360_650.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_1280x_640x360_1000.mp4",
+            "Size": 913324,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/114cc51d-b45c-46d0-bd33-7752d53768fa/big_buck_bunny_720p_stereo_1280x_640x360_1000.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_1280x_960x540_1500.mp4",
+            "Size": 1154491,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/114cc51d-b45c-46d0-bd33-7752d53768fa/big_buck_bunny_720p_stereo_1280x_960x540_1500.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_1280x_960x540_2250.mp4",
+            "Size": 1531769,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/114cc51d-b45c-46d0-bd33-7752d53768fa/big_buck_bunny_720p_stereo_1280x_960x540_2250.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_1280x_1280x720_3400.mp4",
+            "Size": 2082525,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/114cc51d-b45c-46d0-bd33-7752d53768fa/big_buck_bunny_720p_stereo_1280x_1280x720_3400.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_manifest.xml",
+            "Size": 7881,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/114cc51d-b45c-46d0-bd33-7752d53768fa/big_buck_bunny_720p_stereo_manifest.xml"
+        },
+        {
+            "Name": "8ed691db-920e-4f68-a9f1-d55200c20ba6_metadata.xml",
+            "Size": 1097,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/114cc51d-b45c-46d0-bd33-7752d53768fa/8ed691db-920e-4f68-a9f1-d55200c20ba6_metadata.xml"
+        }
+        ]
+    },
+    {
+        "Id": "nb:cid:UUID:35e02e76-a777-4325-8862-766ee8e30947",
+        "Name": "sample 213123",
+        "Type": "Multi-Bitrate MP4",
+        "BaseStreamingUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/5e573ab4-adfa-4d04-a557-74197d3b4f17/big_buck_bunny_720p_stereo.ism/manifest",
+        "Files": [
+        {
+            "Name": "big_buck_bunny_720p_stereo.ismc",
+            "Size": 1939,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/5e573ab4-adfa-4d04-a557-74197d3b4f17/big_buck_bunny_720p_stereo.ismc"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo.ism",
+            "Size": 2564,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/5e573ab4-adfa-4d04-a557-74197d3b4f17/big_buck_bunny_720p_stereo.ism"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_1280x_320x180_400.mp4",
+            "Size": 817549,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/5e573ab4-adfa-4d04-a557-74197d3b4f17/big_buck_bunny_720p_stereo_1280x_320x180_400.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_1280x_640x360_650.mp4",
+            "Size": 990255,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/5e573ab4-adfa-4d04-a557-74197d3b4f17/big_buck_bunny_720p_stereo_1280x_640x360_650.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_1280x_640x360_1000.mp4",
+            "Size": 1234500,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/5e573ab4-adfa-4d04-a557-74197d3b4f17/big_buck_bunny_720p_stereo_1280x_640x360_1000.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_1280x_960x540_1500.mp4",
+            "Size": 1569410,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/5e573ab4-adfa-4d04-a557-74197d3b4f17/big_buck_bunny_720p_stereo_1280x_960x540_1500.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_1280x_960x540_2250.mp4",
+            "Size": 2096442,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/5e573ab4-adfa-4d04-a557-74197d3b4f17/big_buck_bunny_720p_stereo_1280x_960x540_2250.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_1280x_1280x720_3400.mp4",
+            "Size": 2891355,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/5e573ab4-adfa-4d04-a557-74197d3b4f17/big_buck_bunny_720p_stereo_1280x_1280x720_3400.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_manifest.xml",
+            "Size": 7888,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/5e573ab4-adfa-4d04-a557-74197d3b4f17/big_buck_bunny_720p_stereo_manifest.xml"
+        },
+        {
+            "Name": "8ed691db-920e-4f68-a9f1-d55200c20ba6_metadata.xml",
+            "Size": 1097,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/5e573ab4-adfa-4d04-a557-74197d3b4f17/8ed691db-920e-4f68-a9f1-d55200c20ba6_metadata.xml"
+        }
+        ]
+    },
+    {
+        "Id": "nb:cid:UUID:35bf7f41-427b-431c-b53f-a92d9bc224cd",
+        "Name": "Another extra Sample",
+        "Type": "Multi-Bitrate MP4",
+        "BaseStreamingUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/d26f6c71-3a4e-42e6-9f49-9d5c4f792cce/big_buck_bunny_720p_stereo.ism/manifest",
+        "Files": [
+        {
+            "Name": "big_buck_bunny_720p_stereo.ismc",
+            "Size": 2003,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/d26f6c71-3a4e-42e6-9f49-9d5c4f792cce/big_buck_bunny_720p_stereo.ismc"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo.ism",
+            "Size": 2522,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/d26f6c71-3a4e-42e6-9f49-9d5c4f792cce/big_buck_bunny_720p_stereo.ism"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_320x180_400.mp4",
+            "Size": 1215032,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/d26f6c71-3a4e-42e6-9f49-9d5c4f792cce/big_buck_bunny_720p_stereo_320x180_400.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_640x360_650.mp4",
+            "Size": 1787239,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/d26f6c71-3a4e-42e6-9f49-9d5c4f792cce/big_buck_bunny_720p_stereo_640x360_650.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_640x360_1000.mp4",
+            "Size": 2581667,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/d26f6c71-3a4e-42e6-9f49-9d5c4f792cce/big_buck_bunny_720p_stereo_640x360_1000.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_960x540_1500.mp4",
+            "Size": 3729503,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/d26f6c71-3a4e-42e6-9f49-9d5c4f792cce/big_buck_bunny_720p_stereo_960x540_1500.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_960x540_2250.mp4",
+            "Size": 5452824,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/d26f6c71-3a4e-42e6-9f49-9d5c4f792cce/big_buck_bunny_720p_stereo_960x540_2250.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_1280x720_3400.mp4",
+            "Size": 8067148,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/d26f6c71-3a4e-42e6-9f49-9d5c4f792cce/big_buck_bunny_720p_stereo_1280x720_3400.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_manifest.xml",
+            "Size": 4164,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/d26f6c71-3a4e-42e6-9f49-9d5c4f792cce/big_buck_bunny_720p_stereo_manifest.xml"
+        },
+        {
+            "Name": "9544fdad-cee9-4921-bb6e-5c35fb0fb095_metadata.xml",
+            "Size": 2381,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/d26f6c71-3a4e-42e6-9f49-9d5c4f792cce/9544fdad-cee9-4921-bb6e-5c35fb0fb095_metadata.xml"
+        }
+        ]
+    },
+    {
+        "Id": "nb:cid:UUID:2fc9baa3-6cbd-481d-8f37-fb01c19cf32d",
+        "Name": "Another moere Sample",
+        "Type": "Multi-Bitrate MP4",
+        "BaseStreamingUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/f19a55f5-c23a-421a-bf41-14dc83043568/big_buck_bunny_720p_stereo.ism/manifest",
+        "Files": [
+        {
+            "Name": "big_buck_bunny_720p_stereo.ismc",
+            "Size": 2003,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/f19a55f5-c23a-421a-bf41-14dc83043568/big_buck_bunny_720p_stereo.ismc"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo.ism",
+            "Size": 2522,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/f19a55f5-c23a-421a-bf41-14dc83043568/big_buck_bunny_720p_stereo.ism"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_320x180_400.mp4",
+            "Size": 1214458,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/f19a55f5-c23a-421a-bf41-14dc83043568/big_buck_bunny_720p_stereo_320x180_400.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_640x360_650.mp4",
+            "Size": 1787479,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/f19a55f5-c23a-421a-bf41-14dc83043568/big_buck_bunny_720p_stereo_640x360_650.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_640x360_1000.mp4",
+            "Size": 2586038,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/f19a55f5-c23a-421a-bf41-14dc83043568/big_buck_bunny_720p_stereo_640x360_1000.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_960x540_1500.mp4",
+            "Size": 3729954,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/f19a55f5-c23a-421a-bf41-14dc83043568/big_buck_bunny_720p_stereo_960x540_1500.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_960x540_2250.mp4",
+            "Size": 5448487,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/f19a55f5-c23a-421a-bf41-14dc83043568/big_buck_bunny_720p_stereo_960x540_2250.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_1280x720_3400.mp4",
+            "Size": 8068093,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/f19a55f5-c23a-421a-bf41-14dc83043568/big_buck_bunny_720p_stereo_1280x720_3400.mp4"
+        },
+        {
+            "Name": "9544fdad-cee9-4921-bb6e-5c35fb0fb095_metadata.xml",
+            "Size": 2381,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/f19a55f5-c23a-421a-bf41-14dc83043568/9544fdad-cee9-4921-bb6e-5c35fb0fb095_metadata.xml"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_manifest.xml",
+            "Size": 4164,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/f19a55f5-c23a-421a-bf41-14dc83043568/big_buck_bunny_720p_stereo_manifest.xml"
+        }
+        ]
+    },
+    {
+        "Id": "nb:cid:UUID:fc23fd02-fad4-48c5-8d4b-ab328a15e65a",
+        "Name": "Another Sample",
+        "Type": "Multi-Bitrate MP4",
+        "BaseStreamingUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/823cfa70-b117-4c68-b6fd-0de7671c9763/big_buck_bunny_720p_stereo.ism/manifest",
+        "Files": [
+        {
+            "Name": "big_buck_bunny_720p_stereo.ismc",
+            "Size": 1997,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/823cfa70-b117-4c68-b6fd-0de7671c9763/big_buck_bunny_720p_stereo.ismc"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo.ism",
+            "Size": 2522,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/823cfa70-b117-4c68-b6fd-0de7671c9763/big_buck_bunny_720p_stereo.ism"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_320x180_400.mp4",
+            "Size": 953237,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/823cfa70-b117-4c68-b6fd-0de7671c9763/big_buck_bunny_720p_stereo_320x180_400.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_640x360_650.mp4",
+            "Size": 1410120,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/823cfa70-b117-4c68-b6fd-0de7671c9763/big_buck_bunny_720p_stereo_640x360_650.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_640x360_1000.mp4",
+            "Size": 2032293,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/823cfa70-b117-4c68-b6fd-0de7671c9763/big_buck_bunny_720p_stereo_640x360_1000.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_960x540_1500.mp4",
+            "Size": 2900410,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/823cfa70-b117-4c68-b6fd-0de7671c9763/big_buck_bunny_720p_stereo_960x540_1500.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_960x540_2250.mp4",
+            "Size": 4225138,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/823cfa70-b117-4c68-b6fd-0de7671c9763/big_buck_bunny_720p_stereo_960x540_2250.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_1280x720_3400.mp4",
+            "Size": 6091274,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/823cfa70-b117-4c68-b6fd-0de7671c9763/big_buck_bunny_720p_stereo_1280x720_3400.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_manifest.xml",
+            "Size": 4157,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/823cfa70-b117-4c68-b6fd-0de7671c9763/big_buck_bunny_720p_stereo_manifest.xml"
+        },
+        {
+            "Name": "9544fdad-cee9-4921-bb6e-5c35fb0fb095_metadata.xml",
+            "Size": 2381,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/823cfa70-b117-4c68-b6fd-0de7671c9763/9544fdad-cee9-4921-bb6e-5c35fb0fb095_metadata.xml"
+        }
+        ]
+    },
+    {
+        "Id": "nb:cid:UUID:4c75509d-9cbf-4103-99e8-25f948870e27",
+        "Name": "Sample Subclip",
+        "Type": "Multi-Bitrate MP4",
+        "BaseStreamingUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/54294fe7-cca5-4b98-a27b-c536e0fdadeb/big_buck_bunny_720p_stereo.ism/manifest",
+        "Files": [
+        {
+            "Name": "big_buck_bunny_720p_stereo.ismc",
+            "Size": 1980,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/54294fe7-cca5-4b98-a27b-c536e0fdadeb/big_buck_bunny_720p_stereo.ismc"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo.ism",
+            "Size": 2522,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/54294fe7-cca5-4b98-a27b-c536e0fdadeb/big_buck_bunny_720p_stereo.ism"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_320x180_400.mp4",
+            "Size": 860100,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/54294fe7-cca5-4b98-a27b-c536e0fdadeb/big_buck_bunny_720p_stereo_320x180_400.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_640x360_650.mp4",
+            "Size": 1273343,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/54294fe7-cca5-4b98-a27b-c536e0fdadeb/big_buck_bunny_720p_stereo_640x360_650.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_640x360_1000.mp4",
+            "Size": 1854249,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/54294fe7-cca5-4b98-a27b-c536e0fdadeb/big_buck_bunny_720p_stereo_640x360_1000.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_960x540_1500.mp4",
+            "Size": 2648466,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/54294fe7-cca5-4b98-a27b-c536e0fdadeb/big_buck_bunny_720p_stereo_960x540_1500.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_960x540_2250.mp4",
+            "Size": 3880730,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/54294fe7-cca5-4b98-a27b-c536e0fdadeb/big_buck_bunny_720p_stereo_960x540_2250.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_1280x720_3400.mp4",
+            "Size": 5575077,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/54294fe7-cca5-4b98-a27b-c536e0fdadeb/big_buck_bunny_720p_stereo_1280x720_3400.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_manifest.xml",
+            "Size": 4163,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/54294fe7-cca5-4b98-a27b-c536e0fdadeb/big_buck_bunny_720p_stereo_manifest.xml"
+        },
+        {
+            "Name": "9544fdad-cee9-4921-bb6e-5c35fb0fb095_metadata.xml",
+            "Size": 2381,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/54294fe7-cca5-4b98-a27b-c536e0fdadeb/9544fdad-cee9-4921-bb6e-5c35fb0fb095_metadata.xml"
+        }
+        ]
+    },
+    {
+        "Id": "nb:cid:UUID:8ed691db-920e-4f68-a9f1-d55200c20ba6",
+        "Name": "Big Buck Bunny sample job",
+        "Type": "Multi-Bitrate MP4",
+        "BaseStreamingUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo.ism/manifest",
+        "Files": [
+        {
+            "Name": "big_buck_bunny_720p_stereo.ismc",
+            "Size": 2101,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo.ismc"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_960x540_2250.mp4",
+            "Size": 9486912,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_960x540_2250.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo.ism",
+            "Size": 2522,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo.ism"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_320x180_400.mp4",
+            "Size": 2107869,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_320x180_400.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_640x360_650.mp4",
+            "Size": 3103282,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_640x360_650.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_640x360_1000.mp4",
+            "Size": 4504686,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_640x360_1000.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_960x540_1500.mp4",
+            "Size": 6492838,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_960x540_1500.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_1280x720_3400.mp4",
+            "Size": 14033724,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_1280x720_3400.mp4"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000048.jpg",
+            "Size": 147677,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000048.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000033.jpg",
+            "Size": 85593,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000033.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000044.jpg",
+            "Size": 173697,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000044.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000039.jpg",
+            "Size": 182480,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000039.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000037.jpg",
+            "Size": 77900,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000037.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000038.jpg",
+            "Size": 170910,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000038.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000036.jpg",
+            "Size": 77879,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000036.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000034.jpg",
+            "Size": 87401,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000034.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000035.jpg",
+            "Size": 78401,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000035.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000032.jpg",
+            "Size": 80860,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000032.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000045.jpg",
+            "Size": 165297,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000045.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000046.jpg",
+            "Size": 169397,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000046.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000047.jpg",
+            "Size": 169907,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000047.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000049.jpg",
+            "Size": 169943,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000049.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000043.jpg",
+            "Size": 172389,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000043.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000042.jpg",
+            "Size": 168749,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000042.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000041.jpg",
+            "Size": 176945,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000041.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000040.jpg",
+            "Size": 177306,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000040.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000021.jpg",
+            "Size": 191903,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000021.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000023.jpg",
+            "Size": 185505,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000023.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000022.jpg",
+            "Size": 191690,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000022.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000050.jpg",
+            "Size": 167698,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000050.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000020.jpg",
+            "Size": 195709,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000020.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000019.jpg",
+            "Size": 181085,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000019.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000018.jpg",
+            "Size": 172683,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000018.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000017.jpg",
+            "Size": 166990,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000017.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000016.jpg",
+            "Size": 161420,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000016.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000031.jpg",
+            "Size": 80414,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000031.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000030.jpg",
+            "Size": 80937,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000030.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000028.jpg",
+            "Size": 85604,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000028.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000029.jpg",
+            "Size": 88155,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000029.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000026.jpg",
+            "Size": 84003,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000026.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000027.jpg",
+            "Size": 84502,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000027.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000025.jpg",
+            "Size": 186928,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000025.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000024.jpg",
+            "Size": 190279,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000024.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000013.jpg",
+            "Size": 132388,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000013.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000009.jpg",
+            "Size": 113220,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000009.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000004.jpg",
+            "Size": 68833,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000004.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000005.jpg",
+            "Size": 73527,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000005.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000012.jpg",
+            "Size": 126427,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000012.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000014.jpg",
+            "Size": 141270,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000014.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000010.jpg",
+            "Size": 115500,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000010.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000007.jpg",
+            "Size": 93269,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000007.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000003.jpg",
+            "Size": 64316,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000003.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000015.jpg",
+            "Size": 155099,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000015.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000001.jpg",
+            "Size": 37926,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000001.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000011.jpg",
+            "Size": 121755,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000011.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000008.jpg",
+            "Size": 103513,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000008.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000002.jpg",
+            "Size": 48982,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000002.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_000006.jpg",
+            "Size": 82352,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_000006.jpg"
+        },
+        {
+            "Name": "big_buck_bunny_720p_stereo_manifest.xml",
+            "Size": 4165,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/big_buck_bunny_720p_stereo_manifest.xml"
+        },
+        {
+            "Name": "9544fdad-cee9-4921-bb6e-5c35fb0fb095_metadata.xml",
+            "Size": 2381,
+            "DownloadUrl": "//media7nvl3wurg4tuk.streaming.mediaservices.windows.net/6f204df2-f052-4c21-a9f4-9eb1a052757c/9544fdad-cee9-4921-bb6e-5c35fb0fb095_metadata.xml"
+        }
+        ]
+    },
+    {
+        "Id": "nb:cid:UUID:9544fdad-cee9-4921-bb6e-5c35fb0fb095",
+        "Name": "big_buck_bunny_720p_stereo.mp4",
+        "Type": "Single MP4",
+        "BaseStreamingUrl": null,
+        "Files": [
+        {
+            "Name": "big_buck_bunny_720p_stereo.mp4",
+            "Size": 20256469,
+            "DownloadUrl": null
+        }
+        ]
+    }
+    ]
+}

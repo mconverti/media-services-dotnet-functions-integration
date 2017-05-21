@@ -1,0 +1,89 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "appServiceName": {
+            "type": "string",
+            "metadata": {
+                "description": "Azure App Service application name"
+            }
+        },
+        "azureFunctionsUrl": {
+            "type": "string",
+            "metadata": {
+                "description": "URL of the Azure Functions backend"
+            }
+        },
+        "sourceCodeRepositoryURL": {
+            "type": "string",
+            "defaultValue": "ENTER PATH to YOUR FORK of https://github.com/Azure-Samples/media-services-dotnet-functions-integration",
+            "metadata": {
+                "description": "Source code repository URL. Is is REQUIRED that you first fork the samples repository and point this to your fork. If you are using your own fork, you may see an error in deployment related to GitHub auth. We require this for your own good, as we may update and break your application or testing as we deploy new updates to the public samples repository."
+            }
+        }
+    },
+    "variables": {
+        "appServicePlanName": "[concat('serviceplan', uniqueString(resourceGroup().id))]",
+        "appServiceTier": "Free",
+        "appServiceWorkerSize": "0"
+    },
+    "resources": [{
+            "apiVersion": "2014-06-01",
+            "name": "[variables('appServicePlanName')]",
+            "type": "Microsoft.Web/serverfarms",
+            "location": "[resourceGroup().location]",
+            "properties": {
+                "name": "[variables('appServicePlanName')]",
+                "appServiceTier": "[variables('appServiceTier')]",
+                "workerSize": "[variables('appServiceWorkerSize')]",
+                "hostingEnvironment": "",
+                "numberOfWorkers": 1
+            }
+        },
+        {
+            "apiVersion": "2015-08-01",
+            "name": "[parameters('appServiceName')]",
+            "type": "Microsoft.Web/sites",
+            "location": "[resourceGroup().location]",
+            "tags": {
+                "[concat('hidden-related:', resourceGroup().id, '/providers/Microsoft.Web/serverfarms/', parameters('appServiceName'))]": "Resource",
+                "displayName": "Website"
+            },
+            "dependsOn": [
+                "[concat('Microsoft.Web/serverFarms/', variables('appServicePlanName'))]"
+            ],
+            "resources": [{
+                "apiVersion": "2015-08-01",
+                "name": "web",
+                "type": "sourcecontrols",
+                "dependsOn": [
+                    "[resourceId('Microsoft.Web/Sites', concat(parameters('appServiceName')))]"
+                ],
+                "properties": {
+                    "repoUrl": "[parameters('sourceCodeRepositoryURL')]",
+                    "branch": "master",
+                    "IsManualIntegration": true
+                }
+            }],
+            "properties": {
+                "name": "[parameters('appServiceName')]",
+                "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', variables('appServicePlanName'))]",
+                "siteConfig": {
+                    "appSettings": [{
+                            "Name": "Project",
+                            "Value": "202-listing-and-subclipping-apis/web-client"
+                        },
+                        {
+                            "Name": "API_BASE_URL",
+                            "Value": "[parameters('azureFunctionsUrl')]"
+                        },
+                        {
+                            "Name": "WEBSITE_NODE_DEFAULT_VERSION",
+                            "Value": "6.5.0"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

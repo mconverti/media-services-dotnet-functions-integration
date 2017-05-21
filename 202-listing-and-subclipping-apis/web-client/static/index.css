@@ -1,0 +1,66 @@
+﻿html, body {
+    height:100%;
+    width:100%;
+}
+
+h2 {
+    margin-top: 20px !important;
+}
+
+#editor {
+    position: fixed;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.85);
+    z-index: 1002;
+}
+
+#videoContainer {
+    display: inline-block;
+    width: 640px;
+    min-width: 640px;
+    max-width: 640px;
+    height: 620px;
+    min-height: 620px;
+    max-height: 620px;
+}
+
+#amve {
+    margin:auto;
+    width: 640px;
+    min-width: 640px;
+    max-width: 640px;
+    height: 620px;
+    min-height: 620px;
+    max-height: 620px;
+}
+
+#ampEditor {
+    width: 640px;
+    height: 480px;
+}
+
+#btnCloseEditor {
+    position: fixed;
+    top: 18px;
+    right: 50%;
+    margin-right: -350px;
+    color: white;
+    cursor: pointer;
+}
+
+.dataTables_processing {
+    z-index: 1001;
+}
+
+.amve-btn.amve-btn-text.amve-virtual-btn,
+.amve-btn.amve-btn-text.amve-trim-btn {
+    opacity: 0;
+}
+
+.amve-btn.amve-btn-text.amve-rendered-btn {
+    background-color: rgba(49,164,232,.8);
+}
