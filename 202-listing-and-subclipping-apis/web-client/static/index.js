@@ -38,7 +38,7 @@
             // initialize Azure Media Player + Azure Media Video Editor
             amp('ampEditor', playerOptions);
 
-            var table = $('table').DataTable({
+            var table = $('#assets').DataTable({
                 serverSide: true,
                 bSort: false,
                 searching: false,
@@ -116,7 +116,38 @@
 
         $.getJSON(url, function (asset) {
             $(that).html(oldState);
-            alert('not yet implemented');
+
+            $('.ui.modal .header').text(asset.Name);
+
+            var data = asset.Files.sort(function (a, b) {
+                return a.Name.toLowerCase().localeCompare(b.Name.toLowerCase());
+            });
+
+            if ($.fn.DataTable.isDataTable('#files')) {
+                var table = $('#files').dataTable();
+                table.fnClearTable();
+                table.fnAddData(data);
+                table.fnDraw();
+            } else {
+                $('#files').DataTable({
+                    data: data,
+                    iDisplayLength: 8,
+                    bLengthChange: false,
+                    columns: [{
+                            data: 'Name',
+                            fnCreatedCell: function (nTd, sData, oData, iRow, iCol) {
+                                $(nTd).html('<a target="_blank" href="'+oData.DownloadUrl+'">'+oData.Name+'&nbsp;<i class="external small icon"></i></a>');
+                            }
+                        },{
+                            data: 'Size'
+                        }
+                    ]
+                });
+
+                $('#files').removeAttr('style');
+            }
+
+            $('.ui.modal').modal('show');
         });
     });
 

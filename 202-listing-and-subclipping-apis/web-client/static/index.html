@@ -24,7 +24,7 @@
 </div>
 <br/>
 <div class="ui container">
-<table class="ui single line table">
+<table id="assets" class="ui single line table">
   <thead>
     <tr>
       <th>Name</th>
@@ -34,7 +34,7 @@
       <th></th>
     </tr>
   </thead>
-  <tbody id="assets">
+  <tbody>
       <td colspan="5">
           <div class="ui active centered inline loader"></div>
       </td>
@@ -48,6 +48,30 @@
       <video id="ampEditor" class="azuremediaplayer amp-default-skin" width="640" height="480">
         <p class="amp-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video</p>
       </video>
+    </div>
+  </div>
+</div>
+<div class="ui modal">
+  <i class="close icon"></i>
+  <div class="header">
+    Asset Title Placeholder
+  </div>
+  <div class="content">
+    <table id="files" class="ui single line centered table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Size</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+  <div class="actions">
+    <div class="ui positive right labeled icon button">
+      I'm done
+      <i class="checkmark icon"></i>
     </div>
   </div>
 </div>
