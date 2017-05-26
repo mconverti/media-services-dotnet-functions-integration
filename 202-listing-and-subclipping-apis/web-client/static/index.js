@@ -136,7 +136,9 @@
                     columns: [{
                             data: 'Name',
                             fnCreatedCell: function (nTd, sData, oData, iRow, iCol) {
-                                $(nTd).html('<a target="_blank" href="'+oData.DownloadUrl+'">'+oData.Name+'&nbsp;<i class="external small icon"></i></a>');
+                                if (oData.DownloadUrl) {
+                                    $(nTd).html('<a target="_blank" href="'+oData.DownloadUrl+'">'+oData.Name+'&nbsp;<i class="external small icon"></i></a>');
+                                }
                             }
                         },{
                             data: 'Size'
