@@ -2,6 +2,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.WindowsAzure.MediaServices.Client;
 
+public const int MaxAssetPageSize = 24;
+
 public const string AssetIdPrefix = "nb:cid:UUID:";
 
 public const string Mp3FileExtension = ".mp3";

@@ -16,6 +16,12 @@ public static HttpResponseMessage Run(HttpRequestMessage req, TraceWriter log)
     var mediaServicesAccountName = Environment.GetEnvironmentVariable("AMSAccount");
     var mediaServicesAccountKey = Environment.GetEnvironmentVariable("AMSKey");
 
+    if (take >= MaxAssetPageSize) {
+        var errorMessage = $"Take filter parameter must be lower than '{MaxAssetPageSize}' and current value is '{take}'.";
+        log.Error($"Bad Request. {errorMessage}");
+        return req.CreateResponse(HttpStatusCode.BadRequest, new { Error = errorMessage });
+    }
+
     log.Info($"Getting assets from '{mediaServicesAccountName}' account with paging parameters. skip: '{skip}' - take: '{take}'");
 
     var context = new CloudMediaContext(new MediaServicesCredentials(mediaServicesAccountName, mediaServicesAccountKey));
