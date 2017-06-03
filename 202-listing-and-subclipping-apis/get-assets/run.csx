@@ -34,8 +34,8 @@ public static HttpResponseMessage Run(HttpRequestMessage req, TraceWriter log)
     var mediaLocatorsGroups = context.Locators.Where(CreateOrExpression<ILocator, string>("AssetId", mediaAssetIds)).ToArray().GroupBy(l => l.AssetId);
     var streamingEndpoints = context.StreamingEndpoints.ToArray();
 
-    log.Info($"Getting assets total count from '{mediaServicesAccountName}' account.");
-    var apiAssetsTotalCount = context.Assets.Count();
+    log.Info($"Getting assets query total count from '{mediaServicesAccountName}' account.");
+    var apiAssetsTotalCount = assetsQuery.Count();
 
     var apiAssets = mediaAssets
         .Select(
