@@ -11,6 +11,7 @@ using Microsoft.WindowsAzure.MediaServices.Client;
 public static HttpResponseMessage Run(HttpRequestMessage req, TraceWriter log)
 {
     var valuePairs = req.GetQueryNameValuePairs();
+    var search = GetQueryStringValue(valuePairs, "search");
     var skip = GetQueryStringIntValue(valuePairs, "skip", 0);
     var take = GetQueryStringIntValue(valuePairs, "take", 10);
     var mediaServicesAccountName = Environment.GetEnvironmentVariable("AMSAccount");
@@ -22,10 +23,12 @@ public static HttpResponseMessage Run(HttpRequestMessage req, TraceWriter log)
         return req.CreateResponse(HttpStatusCode.BadRequest, new { Error = errorMessage });
     }
 
-    log.Info($"Getting assets from '{mediaServicesAccountName}' account with paging parameters. skip: '{skip}' - take: '{take}'");
+    log.Info($"Getting assets from '{mediaServicesAccountName}' account with parameters. search: '{search}' - skip: '{skip}' - take: '{take}'");
 
     var context = new CloudMediaContext(new MediaServicesCredentials(mediaServicesAccountName, mediaServicesAccountKey));
-    var mediaAssets = context.Assets.OrderByDescending(a => a.Created).Skip(skip).Take(take).ToArray();
+    
+    IQueryable<IAsset> assetsQuery = string.IsNullOrEmpty(search) ? context.Assets : context.Assets.Where(a => (a.Name != null) && a.Name.Contains(search));
+    var mediaAssets = assetsQuery.OrderByDescending(a => a.Created).Skip(skip).Take(take).ToArray();
     var mediaAssetIds = mediaAssets.Select(a => a.Id).ToArray();
     var mediaAssetFilesGroups = context.Files.Where(CreateOrExpression<IAssetFile, string>("ParentAssetId", mediaAssetIds)).ToArray().GroupBy(af => af.ParentAssetId);
     var mediaLocatorsGroups = context.Locators.Where(CreateOrExpression<ILocator, string>("AssetId", mediaAssetIds)).ToArray().GroupBy(l => l.AssetId);
@@ -52,22 +55,33 @@ public static HttpResponseMessage Run(HttpRequestMessage req, TraceWriter log)
     });
 }
 
-public static int GetQueryStringIntValue(IEnumerable<KeyValuePair<string, string>> keyValuePairs, string key, int defaultValue)
+public static string GetQueryStringValue(IEnumerable<KeyValuePair<string, string>> keyValuePairs, string key)
 {
-    var queryStringValue = defaultValue;
-
+    var value = string.Empty;
     var pairs = keyValuePairs.Where(vp => vp.Key.Equals(key, StringComparison.OrdinalIgnoreCase));
     if (pairs.Count() > 0)
     {
-        int value;
         var pair = pairs.First();
-        if (int.TryParse(pair.Value, NumberStyles.Integer, CultureInfo.InvariantCulture, out value) && value >= 0)
+        value = pair.Value;
+    }
+
+    return value;
+}
+
+public static int GetQueryStringIntValue(IEnumerable<KeyValuePair<string, string>> keyValuePairs, string key, int defaultValue)
+{
+    var value = defaultValue;
+    var stringValue = GetQueryStringValue(keyValuePairs, key);
+    if (!string.IsNullOrWhiteSpace(stringValue))
+    {
+        int intValue;
+        if (int.TryParse(stringValue, NumberStyles.Integer, CultureInfo.InvariantCulture, out intValue) && intValue >= 0)
         {
-            queryStringValue = value;
+            value = intValue;
         }
     }
 
-    return queryStringValue;
+    return value;
 }
 
 private static Expression<Func<T, bool>> CreateOrExpression<T, V>(string propertyName, IEnumerable<V> values)

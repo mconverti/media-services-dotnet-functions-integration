@@ -41,9 +41,9 @@
             var table = $('#assets').DataTable({
                 serverSide: true,
                 bSort: false,
-                searching: false,
+                searching: true,
                 ajax: function (data, callback, settings) {
-                    $.getJSON(assetsUrl + '?skip=' + data.start + '&take=' + data.length,
+                    $.getJSON(assetsUrl + '?skip=' + data.start + '&take=' + data.length + '&search=' + data.search.value,
                         function (data) {
                             // renaming Data as data
                             data.data = data.Data;
