@@ -51,7 +51,8 @@ public static HttpResponseMessage Run(HttpRequestMessage req, TraceWriter log)
     return req.CreateResponse(HttpStatusCode.OK, new {
         Data = apiAssets,
         Total = apiAssetsTotalCount,
-        Skip = skip
+        Skip = skip,
+        Search = search
     });
 }
 
