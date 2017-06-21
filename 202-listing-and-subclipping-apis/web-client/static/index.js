@@ -94,9 +94,9 @@
 
             function rowCallback(row, data, index) {
                 var buttons = '<div class="ui icon basic buttons">' +
-                    '<a class="ui button item" data-download-asset="' + data.Id + '"><i class="cloud download icon"></i></a>';
+                    '<a alt="Explore asset files" title="Explore asset files" class="ui button item" data-download-asset="' + data.Id + '"><i class="file video outline icon"></i></a>';
                 if (data.BaseStreamingUrl) {
-                    buttons += '<a class="ui button item" data-edit-asset="' + data.Id + '"><i class="edit icon"></i></a>';
+                    buttons += '<a alt="Open video subclipper player" title="Open video subclipper player" class="ui button item" data-edit-asset="' + data.Id + '"><i class="video play icon"></i></a>';
                 }
                 buttons += '</div></td></tr>';
 
@@ -138,7 +138,7 @@
                             data: 'Name',
                             fnCreatedCell: function (nTd, sData, oData, iRow, iCol) {
                                 if (oData.DownloadUrl) {
-                                    $(nTd).html('<a target="_blank" href="'+oData.DownloadUrl+'">'+oData.Name+'&nbsp;<i class="external small icon"></i></a>');
+                                    $(nTd).html('<a alt="Download file" title="Download file" target="_blank" href="'+oData.DownloadUrl+'">'+oData.Name+'&nbsp;<i class="cloud download small icon"></i></a>');
                                 }
                             }
                         },{
