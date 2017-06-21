@@ -132,7 +132,7 @@
             } else {
                 $('#files').DataTable({
                     data: data,
-                    iDisplayLength: 8,
+                    iDisplayLength: 10,
                     bLengthChange: false,
                     columns: [{
                             data: 'Name',
